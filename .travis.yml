@@ -1,3 +1,4 @@
+language: JavaScript
 sudo: required
 services:
     - docker
