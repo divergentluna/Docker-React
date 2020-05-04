@@ -9,4 +9,4 @@ before_install:
 #series of commands just when our
 #test need to actually be executed
 script:
-    - docker run divergentluna/Docker-React npm run test -- --coverage
+    - docker run divergentluna/docker-react npm run test -- --coverage
