@@ -1,0 +1,11 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t divergentluna/Docker-React -f Dockerfile.dev .
+
+#series of commands just when our
+#test need to actually be executed
+script:
+    - docker run divergentluna/Docker-React npm run test -- --coverage
